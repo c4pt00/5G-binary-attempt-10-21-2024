@@ -53,6 +53,10 @@ You can use the "depscript.sh" to automatically install Dependencies to build VG
 Building 5G-CASH
 ----------------------
 ### 1. Static compile
+    
+    apt-get update -y
+    apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev 
+    bsdmainutils libboost-all-dev libzmq3-dev libminizip-dev sudo -y
     git clone https://github.com/5G-Cash/5G.git
     chmod -R +rwx 5G 
     cd 5G/depends
