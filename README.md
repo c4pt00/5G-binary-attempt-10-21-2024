@@ -56,7 +56,7 @@ Building 5G-CASH
     
     apt-get update -y
     apt-get install build-essential libtool autotools-dev automake pkg-config libssl-dev libevent-dev 
-    bsdmainutils libboost-all-dev libzmq3-dev libminizip-dev sudo -y
+    bsdmainutils libboost-all-dev libzmq3-dev libminizip-dev sudo curl -y
     git clone https://github.com/5G-Cash/5G.git
     chmod -R +rwx 5G 
     cd 5G/depends
