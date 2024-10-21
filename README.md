@@ -63,8 +63,11 @@ Building 5G-CASH
     make -j8 HOST=x86_64-linux-gnu
     cd ..
     ./autogen.sh
-    ./configure --prefix=$PWD/depends/x86_64-linux-gnu
-    make 
+    CONFIG_SITE=$PWD/depends/x86_64-gnu-linux/share/config.site ./configure      --prefix=$PWD/5G-shared-linux --disable-fuzz-binary --disable-bench --disable-tests --with-incompatible-bdb
+    make -j8 clean
+    make -j8
+    make -j8 install
+    
 
 
 #### 2. Shared binary
